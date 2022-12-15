@@ -12,7 +12,12 @@
   line-height: 120%;
 }
 
+.contacts__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .contacts__title {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -23,4 +28,44 @@
   font-size: 24px;
   line-height: 33px;
   color: #d22856;
+
+  &:hover,
+  &:focus {
+    color: #283645;
+    text-decoration-line: underline;
+  }
+
+  &:active {
+    color: #283645;
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
+
+.contacts__map-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    background-image: url("../../img/index-page/triangle-white-footer.png");
+    background-size: 100% 33px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+    @media @tablet {
+      height: 67px;
+      background-size: 100% 67px;
+    }
+
+    @media @desktop {
+      height: 104px;
+      background-size: 100% 104px;
+    }
+  }
 }
