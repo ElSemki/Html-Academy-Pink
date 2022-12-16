@@ -10,7 +10,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page__header page-header">
     <div class="page-header__navigation-wrapper">
       <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__navigation-header-wrapper">
@@ -94,51 +94,55 @@
             </p>
           </fieldset>
 
-          <fieldset class="main-form__item main-form__item--travel-achievements travel-achievements">
-            <legend class="travel-achievements__caption main-form-legend">Ваши безбашенные достижения в путешествии
-            </legend>
-            <ul class="travel-achievements__list">
-              <li class="travel-achievements__item">
-                <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="shark-selfie"
-                  name="shark-selfie" checked>
-                <label class="travel-achievements__label main-form-checkbox-label" for="shark-selfie">Сделал селфи с
-                  акулой</label>
-              </li>
-              <li class="travel-achievements__item">
-                <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="burned-on-the-beach"
-                  name="burned-on-the-beach" checked>
-                <label class="travel-achievements__label main-form-checkbox-label" for="burned-on-the-beach">Обгорел на
-                  пляже</label>
-              </li>
-              <li class="travel-achievements__item">
-                <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="saw-chuck-norris"
-                  name="saw-chuck-norris">
-                <label class="travel-achievements__label main-form-checkbox-label" for="saw-chuck-norris">Видел Чака
-                  Норриса</label>
-              </li>
-              <li class="travel-achievements__item">
-                <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="bought-some-souvenirs"
-                  name="bought-some-souvenirs">
-                <label class="travel-achievements__label main-form-checkbox-label" for="bought-some-souvenirs">Накупил
-                  сувениров</label>
-              </li>
-              <li class="travel-achievements__item">
-                <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="held-the-tower"
-                  name="held-the-tower" checked>
-                <label class="travel-achievements__label main-form-checkbox-label" for="held-the-tower">Удержал
-                  башню</label>
-              </li>
-              <li class="travel-achievements__item">
-                <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="trashed-the-hotel"
-                  name="trashed-the-hotel">
-                <label class="travel-achievements__label main-form-checkbox-label" for="trashed-the-hotel">Разгромил
-                  отель</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="main-form__item-wrapper">
+            <fieldset class="main-form__item main-form__item--travel-achievements travel-achievements">
+              <legend class="travel-achievements__caption main-form-legend">Ваши безбашенные достижения в путешествии
+              </legend>
+              <ul class="travel-achievements__list">
+                <li class="travel-achievements__item">
+                  <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="shark-selfie"
+                    name="shark-selfie" checked>
+                  <label class="travel-achievements__label main-form-checkbox-label" for="shark-selfie">Сделал селфи с
+                    акулой</label>
+                </li>
+                <li class="travel-achievements__item">
+                  <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="burned-on-the-beach"
+                    name="burned-on-the-beach" checked>
+                  <label class="travel-achievements__label main-form-checkbox-label" for="burned-on-the-beach">Обгорел
+                    на
+                    пляже</label>
+                </li>
+                <li class="travel-achievements__item">
+                  <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="saw-chuck-norris"
+                    name="saw-chuck-norris">
+                  <label class="travel-achievements__label main-form-checkbox-label" for="saw-chuck-norris">Видел Чака
+                    Норриса</label>
+                </li>
+                <li class="travel-achievements__item">
+                  <input class="travel-achievements__checkbox visually-hidden" type="checkbox"
+                    id="bought-some-souvenirs" name="bought-some-souvenirs">
+                  <label class="travel-achievements__label main-form-checkbox-label" for="bought-some-souvenirs">Накупил
+                    сувениров</label>
+                </li>
+                <li class="travel-achievements__item">
+                  <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="held-the-tower"
+                    name="held-the-tower" checked>
+                  <label class="travel-achievements__label main-form-checkbox-label" for="held-the-tower">Удержал
+                    башню</label>
+                </li>
+                <li class="travel-achievements__item">
+                  <input class="travel-achievements__checkbox visually-hidden" type="checkbox" id="trashed-the-hotel"
+                    name="trashed-the-hotel">
+                  <label class="travel-achievements__label main-form-checkbox-label" for="trashed-the-hotel">Разгромил
+                    отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="main-form__item main-form__item--contact-information contact-information">
-            <legend class="contact-information__caption main-form-legend">Контактная информация</legend>
+            <legend class="contact-information__caption main-form-legend main-form-legend--contact-information">
+              Контактная информация</legend>
             <p class="contact-information__item">
               <label class="contact-information__label user-info-label" for="tel">Номер телефона:</label>
               <input class="contact-information__input user-info-input user-info-input--contacts user-info-input--tel"
@@ -151,26 +155,29 @@
             </p>
           </fieldset>
 
-          <fieldset class="main-form__item main-form__item--which-application which-application">
-            <legend class="which-application__caption main-form-legend">С каким приложением путешествовали?</legend>
-            <ul class="which-application__list">
-              <li class="which-application__item">
-                <input class="which-application__radio visually-hidden" type="radio" name="which-application"
-                  value="ios" id="ios" checked>
-                <label class="which-application__label main-form-checkbox-label" for="ios">Pink для IOS</label>
-              </li>
-              <li class="which-application__item">
-                <input class="which-application__radio visually-hidden" type="radio" name="which-application"
-                  value="android" id="android">
-                <label class="which-application__label main-form-checkbox-label" for="android">Pink для Android</label>
-              </li>
-              <li class="which-application__item">
-                <input class="which-application__radio visually-hidden" type="radio" name="which-application"
-                  value="windows" id="windows">
-                <label class="which-application__label main-form-checkbox-label" for="windows">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="main-form__item-wrapper">
+            <fieldset class="main-form__item main-form__item--which-application which-application">
+              <legend class="which-application__caption main-form-legend">С каким приложением путешествовали?</legend>
+              <ul class="which-application__list">
+                <li class="which-application__item">
+                  <input class="which-application__radio visually-hidden" type="radio" name="which-application"
+                    value="ios" id="ios" checked>
+                  <label class="which-application__label main-form-checkbox-label" for="ios">Pink для IOS</label>
+                </li>
+                <li class="which-application__item">
+                  <input class="which-application__radio visually-hidden" type="radio" name="which-application"
+                    value="android" id="android">
+                  <label class="which-application__label main-form-checkbox-label" for="android">Pink для
+                    Android</label>
+                </li>
+                <li class="which-application__item">
+                  <input class="which-application__radio visually-hidden" type="radio" name="which-application"
+                    value="windows" id="windows">
+                  <label class="which-application__label main-form-checkbox-label" for="windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
 
           <fieldset class="main-form__item main-form__item--emotions emotions">
             <legend class="emotions__caption main-form-legend">Опишите свои эмоции</legend>
