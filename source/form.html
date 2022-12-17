@@ -75,26 +75,28 @@
         <p class="competition-form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
           на вашу бонусную карту!</p>
         <form class="competition-form__main-form main-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="main-form__item main-form__item--introduce-yourself introduce-yourself">
-            <legend class="visually-hidden">Представьтесь</legend>
-            <p class="introduce-yourself__item">
-              <label class="introduce-yourself__label user-info-label" for="surname">Фамилия:</label>
-              <input class="introduce-yourself__input user-info-input user-info-input--full-width" id="surname"
-                type="text" name="surname" placeholder="Укажите фамилию *" required>
-            </p>
-            <p class="introduce-yourself__item">
-              <label class="introduce-yourself__label user-info-label" for="name">Имя:</label>
-              <input class="introduce-yourself__input user-info-input user-info-input--full-width" id="name" type="text"
-                name="name" placeholder="Введите ваше имя *" required>
-            </p>
-            <p class="introduce-yourself__item">
-              <label class="introduce-yourself__label user-info-label" for="patronymic">Отчество:</label>
-              <input class="introduce-yourself__input user-info-input user-info-input--full-width" id="patronymic"
-                type="text" name="patronymic" placeholder="Ну и отчество тоже">
-            </p>
-          </fieldset>
-
           <div class="main-form__item-wrapper">
+            <fieldset class="main-form__item main-form__item--introduce-yourself introduce-yourself">
+              <legend class="visually-hidden">Представьтесь</legend>
+              <p class="introduce-yourself__item">
+                <label class="introduce-yourself__label user-info-label" for="surname">Фамилия:</label>
+                <input class="introduce-yourself__input user-info-input user-info-input--full-width" id="surname"
+                  type="text" name="surname" placeholder="Укажите фамилию *" required>
+              </p>
+              <p class="introduce-yourself__item">
+                <label class="introduce-yourself__label user-info-label" for="name">Имя:</label>
+                <input class="introduce-yourself__input user-info-input user-info-input--full-width" id="name"
+                  type="text" name="name" placeholder="Введите ваше имя *" required>
+              </p>
+              <p class="introduce-yourself__item">
+                <label class="introduce-yourself__label user-info-label" for="patronymic">Отчество:</label>
+                <input class="introduce-yourself__input user-info-input user-info-input--full-width" id="patronymic"
+                  type="text" name="patronymic" placeholder="Ну и отчество тоже">
+              </p>
+            </fieldset>
+          </div>
+
+          <div class="main-form__item-wrapper main-form__item-wrapper--travel-achievements">
             <fieldset class="main-form__item main-form__item--travel-achievements travel-achievements">
               <legend class="travel-achievements__caption main-form-legend">Ваши безбашенные достижения в путешествии
               </legend>
@@ -140,22 +142,25 @@
             </fieldset>
           </div>
 
-          <fieldset class="main-form__item main-form__item--contact-information contact-information">
-            <legend class="contact-information__caption main-form-legend main-form-legend--contact-information">
-              Контактная информация</legend>
-            <p class="contact-information__item">
-              <label class="contact-information__label user-info-label" for="tel">Номер телефона:</label>
-              <input class="contact-information__input user-info-input user-info-input--contacts user-info-input--tel"
-                id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="contact-information__item">
-              <label class="contact-information__label user-info-label" for="email">Адрес почты*:</label>
-              <input class="contact-information__input user-info-input user-info-input--contacts user-info-input--email"
-                id="email" type="text" name="email" placeholder="Введите почту *" required>
-            </p>
-          </fieldset>
-
           <div class="main-form__item-wrapper">
+            <fieldset class="main-form__item main-form__item--contact-information contact-information">
+              <legend class="contact-information__caption main-form-legend main-form-legend--contact-information">
+                Контактная информация</legend>
+              <p class="contact-information__item">
+                <label class="contact-information__label user-info-label" for="tel">Номер телефона:</label>
+                <input class="contact-information__input user-info-input user-info-input--contacts user-info-input--tel"
+                  id="tel" type="text" name="tel" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="contact-information__item">
+                <label class="contact-information__label user-info-label" for="email">Адрес почты*:</label>
+                <input
+                  class="contact-information__input user-info-input user-info-input--contacts user-info-input--email"
+                  id="email" type="text" name="email" placeholder="Введите почту *" required>
+              </p>
+            </fieldset>
+          </div>
+
+          <div class="main-form__item-wrapper main-form__item-wrapper--which-application">
             <fieldset class="main-form__item main-form__item--which-application which-application">
               <legend class="which-application__caption main-form-legend">С каким приложением путешествовали?</legend>
               <ul class="which-application__list">
@@ -179,22 +184,26 @@
             </fieldset>
           </div>
 
-          <fieldset class="main-form__item main-form__item--emotions emotions">
-            <legend class="emotions__caption main-form-legend">Опишите свои эмоции</legend>
-            <p class="emotions__item">
-              <label class="emotions__label" for="emotions">
-                <span class="visually-hidden">Здесь вы можете описать свои эмоции:</span>
-              </label>
-              <textarea class="emotions__textarea user-info-input user-info-input--textarea" id="emotions"
-                name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
-          </fieldset>
+          <div class="main-form__item-wrapper">
+            <fieldset class="main-form__item main-form__item--emotions emotions">
+              <legend class="emotions__caption main-form-legend">Опишите свои эмоции</legend>
+              <p class="emotions__item">
+                <label class="emotions__label" for="emotions">
+                  <span class="visually-hidden">Здесь вы можете описать свои эмоции:</span>
+                </label>
+                <textarea class="emotions__textarea user-info-input user-info-input--textarea" id="emotions"
+                  name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </p>
+            </fieldset>
+          </div>
+          <div class="main-form__footer-wrapper">
           <button class="main-form__button button button--main-form" type="submit">
             <span class="active-opacity-text">Отправить форму</span>
           </button>
           <p class="main-form__legend">
-            <small>* - Обязательные поля</small>
+            <small><span>*</span> - Обязательные поля</small>
           </p>
+          </div>
         </form>
       </div>
     </section>

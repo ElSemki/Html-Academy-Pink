@@ -1,0 +1,48 @@
+.photo-list__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:not(:first-child) {
+    padding: 0 20px;
+  }
+
+  &:first-of-type .photo-list__desc {
+    width: 280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+.photo-list__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.photo-list__desc {
+  padding: 18px 17px 21px;
+  background-color: #f2f2f2;
+}
+
+.photo-list__author-info {
+  margin: 0;
+}
+
+.photo-list__datatime {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photo-list__comment {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.photo-list__like-container {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+}

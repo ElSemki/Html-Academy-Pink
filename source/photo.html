@@ -59,7 +59,7 @@
         </ul>
       </nav>
     </div>
-    <p class="page-header__intro-title">Фотографии<br>
+    <p class="page-header__intro-title page-header__intro-title--photo-page">Фотографии<br>
       пользователей
     </p>
   </header>
@@ -71,7 +71,8 @@
     <section class="page-main__photo-gallery photo-gallery">
       <h2 class="visually-hidden">Фотогалерея наших пользователей</h2>
       <div class="photo-gallery__wrapper">
-        <p class="photo-gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не
+        <p class="photo-gallery__title">Взгляните на фотографии, которые выкладывают пользователи!<br>
+          Видите, как не
           хватает ваших?</p>
         <ul class="photo-gallery__photo-list photo-list">
           <li class="photo-list__item">
@@ -85,7 +86,7 @@
                   <b class="photo-list__author-name">Анна</b>
                   <time class="photo-list__datatime" datetime="2022-12-01T12:00">(5 минут назад)</time>
                 </p>
-                <p class="photo-list__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+                <p class="photo-list__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
                   трансляцию в перископе, задавайте свои вопросы!</p>
                 <div class="photo-list__like-container">
                   <span class="photo-list__like-text">Нравится:
@@ -247,7 +248,7 @@
           <p class="photo-editor__title">Затмите их всех!<br>
             Выкладывайте все, что накопилось в телефоне!</p>
         </header>
-        <div class="photo-editor__editor-wrapper">
+        <div class="photo-editor__editor-wrapper content-wrapper">
           <form class="photo-editor__photo-form-editor photo-form-editor" method="post" enctype="multipart/form-data"
             action="https://echo.htmlacademy.ru/">
             <div class="photo-form-editor__select-photo-wrapper">
@@ -283,7 +284,7 @@
                   </button>
                   <button class="photo-form-editor__filter-button" type="button">
                     <span class="visually-hidden">Контрастность</span>
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="photo-form-editor__icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g opacity="0.3">
                         <path
                           d="M16 4C18.3734 4 20.6935 4.70379 22.6669 6.02236C24.6402 7.34094 26.1783 9.21509 27.0866 11.4078C27.9948 13.6005 28.2325 16.0133 27.7694 18.3411C27.3064 20.6689 26.1635 22.8071 24.4853 24.4853C22.8071 26.1635 20.6689 27.3064 18.3411 27.7694C16.0133 28.2324 13.6005 27.9948 11.4078 27.0866C9.21509 26.1783 7.34095 24.6402 6.02237 22.6668C4.70379 20.6935 4.00001 18.3734 4.00001 16C4.00001 12.8174 5.26429 9.76515 7.51473 7.51472C9.76516 5.26428 12.8174 4 16 4ZM16 0C12.8355 0 9.74207 0.938384 7.11088 2.69649C4.4797 4.45459 2.42894 6.95345 1.21793 9.87706C0.0069325 12.8007 -0.309921 16.0177 0.307443 19.1214C0.924806 22.2251 2.44866 25.0761 4.6863 27.3137C6.92394 29.5513 9.77487 31.0752 12.8786 31.6926C15.9823 32.3099 19.1993 31.9931 22.1229 30.7821C25.0466 29.5711 27.5454 27.5203 29.3035 24.8891C31.0616 22.2579 32 19.1645 32 16C32 11.7565 30.3143 7.68687 27.3137 4.68629C24.3131 1.68571 20.2435 0 16 0Z"
@@ -322,7 +323,7 @@
                     </svg>
                   </div>
 
-                  <input class="photo-form-editor__filter-range" type="range" min="1" max="100" name="fill" value="14">
+                  <input class="photo-form-editor__filter-range input range" type="range" min="1" max="100" name="fill" value="14">
                 </div>
 
                 <div class="photo-form-editor__filter">
@@ -340,15 +341,17 @@
                     </svg>
                   </div>
 
-                  <input class="photo-form-editor__filter-range" type="range" min="1" max="100" name="contrast"
+                  <input class="photo-form-editor__filter-range input-range" type="range" min="1" max="100" name="contrast"
                     value="51">
                 </div>
               </div>
 
               <div class="photo-form-editor__buttons">
-                <button class="photo-form-editor__button button button--rounded button--photo-editor-submit"
+                <button
+                  class="photo-form-editor__button link-button link-button--rounded link-button--photo-editor-submit"
                   type="submit">Запостить</button>
-                <button class="photo-form-editor__button button button--rounded button--photo-editor-reset"
+                <button
+                  class="photo-form-editor__button link-button link-button--rounded link-button--photo-editor-reset"
                   type="reset">Отмена</button>
               </div>
             </div>
@@ -432,6 +435,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/photo-filters.js"></script>
 
 </body>
 
