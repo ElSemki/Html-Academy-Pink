@@ -14,6 +14,38 @@
   }
 }
 
+.photo-list__photo-link {
+  position: relative;
+  display: block;
+
+  &--hit {
+    &::before {
+      content: attr(data-panorama-text);
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 20px;
+      padding: 6px 20px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: #d22856;
+
+      @media @tablet {
+        top: 56px;
+        right: 40px;
+      }
+
+      @media @desktop {
+        top: 54px;
+        right: 130px;
+      }
+    }
+  }
+}
+
 .photo-list__photo {
   display: block;
   width: 100%;

@@ -57,12 +57,22 @@
   background-color: transparent;
   cursor: pointer;
 
+  & .photo-form-editor__icon path {
+    fill: fade(#283645, 30%);
+  }
+
   &--current .photo-form-editor__icon path {
     fill: #d22856;
   }
 
   &:focus {
     outline: 1px dashed #d22856;
+  }
+
+  &:not(&--current):hover {
+    & .photo-form-editor__icon path {
+      fill: fade(#283645, 50%);
+    }
   }
 }
 

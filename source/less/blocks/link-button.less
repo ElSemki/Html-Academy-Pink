@@ -9,7 +9,8 @@
   color: #ffffff;
   background-color: transparent;
   border: 3px solid #ffffff;
-  border-radius: 29px;
+  border-radius: 30px;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
@@ -20,5 +21,43 @@
   &:active {
     color: rgba(210, 40, 86, 0.3);
     background-color: #ffffff;
+  }
+
+  &--rounded {
+    background-color: transparent;
+  }
+
+  &--photo-editor-submit {
+    color: #d22856;
+    border-color: #d22856;
+
+    &:hover,
+    &:focus {
+      color: #ffffff;
+      background-color: #d22856;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #d22856;
+    }
+  }
+
+  &--photo-editor-reset {
+    color: #283645;
+    border-color: #283645;
+    opacity: 0.1;
+
+    &:hover,
+    &:focus {
+      color: #283645;
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: #283645;
+      opacity: 0.3;
+    }
   }
 }

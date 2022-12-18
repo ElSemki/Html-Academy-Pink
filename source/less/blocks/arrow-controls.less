@@ -1,6 +1,10 @@
 .arrow-controls {
-  display: flex;
+  display: none;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .arrow-controls__control {

@@ -27,7 +27,7 @@
   }
 
   function changeSlides(indexCurrentSlide, indexNextSlide) {
-    slides[indexCurrentSlide].classList.remove('slider-reviews__slide--current');
+    slides[indexCurrentSlide].classList.remove('reviews__item--current');
     slides[indexNextSlide].classList.add('reviews__item--current');
   }
 
