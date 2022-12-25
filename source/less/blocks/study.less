@@ -1,5 +1,100 @@
 .study {
-  @media (max-width: @mobile-width) {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.study__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 620px;
+  padding: 60px 20px 72px;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 71px;
+    width: 940px;
+  }
+}
+
+.study__information {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  row-gap: 24px;
+  width: 310px;
+  order: 2;
+
+  @media (min-width: @desktop-width) {
+    width: 534px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.study__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
+}
+
+.study__subtitle {
+  margin: 0;
+}
+
+.study__link {
+  color: #d22856;
+  text-decoration-line: underline;
+}
+
+.study__big-clock {
+  width: 238px;
+  padding: 75px 64px 51px;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 163px;
+  color: #d22856;
+  background-image:
+    url("../../img/index-page/diagram-fill.svg"),
+    url("../img/index-page/timer.svg");
+  background-repeat: no-repeat;
+  background-position: 19px 55px, 0 0;
+  background-size: 202px 202px, 238px 276px;
+  box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    padding: 101px 64px 81px 80px;
+    font-size: 120px;
+    background-size: 252px 252px, 298px 345px;
+    background-position: 22px 68px, 0 0;
+  }
+}
+
+.study__transfer {
+  &--desktop {
     display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+
+    &--desktop {
+      display: block;
+    }
   }
 }

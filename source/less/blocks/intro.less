@@ -8,6 +8,12 @@
   background-size: 320px auto, 111px auto;
 }
 
+.intro__wrapper {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
 .intro__subtitle {
   padding: 0 20px;
   min-height: 345px;
@@ -16,15 +22,38 @@
   line-height: 120%;
   text-align: center;
   z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    min-height: auto;
+    margin-top: 0;
+  }
 }
 
 .intro__footer {
   padding: 28px 20px;
   background-color: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.intro__footer-wrapper {
+  max-width: 358px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-height: auto;
+    margin: 0;
+  }
 }
 
 .intro__button {
   margin-bottom: 30px;
+}
+
+.intro__download-platform-list {
+  padding: 0 20px;
 }
 
 .intro__legend {

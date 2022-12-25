@@ -6,9 +6,24 @@
   background-size: 320px auto;
 }
 
-.page-header__navigation-wrapper {
-  // background-color: rgba(0, 0, 0, 0.3);
-  background-color: #283645;
+.page-header__main-nav {
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.page-header__intro {
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    padding: 102px 20px 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 114px 20px 130px;
+  }
 }
 
 .page-header__intro-title {

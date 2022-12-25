@@ -1,4 +1,44 @@
+.main-nav {
+  background-color: #283645;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .main-nav__navigation-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 23px;
   box-shadow: 0 1px 0 #000000;
+
+  @media (min-width: @tablet-width) {
+    padding: 27px 20px 42px;
+  }
+}
+
+.main-nav__logo {
+  width: 75px;
+
+  @media (min-width: @tablet-width) {
+    width: 145px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 147px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: @desktop-width) {
+    width: 620px;
+  }
 }

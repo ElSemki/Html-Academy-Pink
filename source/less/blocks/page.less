@@ -13,8 +13,21 @@
   min-height: 100%;
   color: #283645;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+  }
 }
 
 .page__header {
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 77px;
+  }
 }
