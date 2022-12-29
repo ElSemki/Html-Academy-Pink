@@ -1,5 +1,28 @@
+.contact-information {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 74px;
+  }
+}
+
+.contact-information__caption {
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
 .contact-information__label {
   padding-left: 23px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 15px;
+  }
 }
 
 .contact-information__item {
@@ -7,5 +30,14 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
   }
 }

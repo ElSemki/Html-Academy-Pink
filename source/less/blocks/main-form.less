@@ -1,7 +1,15 @@
-.main-form__item {
-  margin: 0;
-  padding: 0 20px;
-  border: none;
+.main-form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 74px;
+  }
 }
 
 .main-form__item-wrapper {
@@ -11,15 +19,107 @@
   &--travel-achievements,
   &--which-application {
     background-color: #f2f2f2;
+
+    @media (min-width: @tablet-width) {
+      background-color: transparent;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+
+    &--which-application {
+      order: 1;
+    }
+
+    &--contact-information {
+      order: 2;
+    }
+
+    &--travel-achievements {
+      order: 3;
+    }
+
+    &--emotions {
+      order: 4;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+
+    &--introduce-yourself {
+      padding-top: 15px;
+    }
+
+    &--contact-information {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    &--travel-achievements {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    &--emotions {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
+}
+
+.main-form__item {
+  margin: 0;
+  padding: 0 20px;
+
+  @media (max-width: @mobile-width) {
+    border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 40px 60px;
+  }
+
+  &--introduce-yourself {
+    border: none;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
+  }
+
+  &--which-application {
+    @media (min-width: @desktop-width) {
+      padding: 0;
+    }
   }
 }
 
 .main-form__footer-wrapper {
   padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
 .main-form__button {
   margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 296px;
+    margin-bottom: 0;
+  }
 }
 
 .main-form__legend {
@@ -29,7 +129,15 @@
   text-transform: uppercase;
   color: #283645;
 
-  & span {
+  &-star {
     color: #d22856;
+  }
+
+  &-desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: inline;
+    }
   }
 }

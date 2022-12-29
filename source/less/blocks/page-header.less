@@ -27,13 +27,28 @@
 }
 
 .page-header__intro-title {
-  margin: 0;
+  max-width: 550px;
+  min-height: 168px;
+  margin: 0 auto;
   padding: 30px 20px 40px;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   color: #ffffff;
   text-align: center;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 80px 20px 60px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 74px 20px 104px;
+  }
 }
 
 .page-header__intro-title--photo-page {

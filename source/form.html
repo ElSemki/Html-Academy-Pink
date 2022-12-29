@@ -57,9 +57,7 @@
         </li>
       </ul>
     </nav>
-    <p class="page-header__intro-title">Конкурс на самое<br>
-      безбашенное<br>
-      путешествие с Пинк
+    <p class="page-header__intro-title">Конкурс на самое безбашенное путешествие с Пинк
     </p>
   </header>
 
@@ -71,9 +69,11 @@
       <h2 class="visually-hidden">Заполнить форму для участия в конкурсе</h2>
       <div class="competition-form__wrapper">
         <p class="competition-form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль
-          на вашу бонусную карту!</p>
+          на вашу бонусную карту!
+          <span class="competition-form__subtitle-desktop">Пожалуйста, заполните форму ниже:</span>
+        </p>
         <form class="competition-form__main-form main-form" action="https://echo.htmlacademy.ru" method="post">
-          <div class="main-form__item-wrapper">
+          <div class="main-form__item-wrapper main-form__item-wrapper--introduce-yourself">
             <fieldset class="main-form__item main-form__item--introduce-yourself introduce-yourself">
               <legend class="visually-hidden">Представьтесь</legend>
               <p class="introduce-yourself__item">
@@ -95,7 +95,7 @@
           </div>
 
           <div class="main-form__item-wrapper main-form__item-wrapper--travel-achievements">
-            <fieldset class="main-form__item main-form__item--travel-achievements travel-achievements">
+            <fieldset class="main-form__item travel-achievements">
               <legend class="travel-achievements__caption main-form-legend">Ваши безбашенные достижения в путешествии
               </legend>
               <ul class="travel-achievements__list">
@@ -140,8 +140,8 @@
             </fieldset>
           </div>
 
-          <div class="main-form__item-wrapper">
-            <fieldset class="main-form__item main-form__item--contact-information contact-information">
+          <div class="main-form__item-wrapper main-form__item-wrapper--contact-information">
+            <fieldset class="main-form__item contact-information">
               <legend class="contact-information__caption main-form-legend main-form-legend--contact-information">
                 Контактная информация</legend>
               <p class="contact-information__item">
@@ -159,7 +159,7 @@
           </div>
 
           <div class="main-form__item-wrapper main-form__item-wrapper--which-application">
-            <fieldset class="main-form__item main-form__item--which-application which-application">
+            <fieldset class="main-form__item  main-form__item--which-application which-application">
               <legend class="which-application__caption main-form-legend">С каким приложением путешествовали?</legend>
               <ul class="which-application__list">
                 <li class="which-application__item">
@@ -182,8 +182,8 @@
             </fieldset>
           </div>
 
-          <div class="main-form__item-wrapper">
-            <fieldset class="main-form__item main-form__item--emotions emotions">
+          <div class="main-form__item-wrapper main-form__item-wrapper--emotions">
+            <fieldset class="main-form__item emotions">
               <legend class="emotions__caption main-form-legend">Опишите свои эмоции</legend>
               <p class="emotions__item">
                 <label class="emotions__label" for="emotions">
@@ -199,7 +199,11 @@
               <span class="active-opacity-text">Отправить форму</span>
             </button>
             <p class="main-form__legend">
-              <small><span>*</span> - Обязательные поля</small>
+              <small>
+                <span class="main-form__legend-star">*</span>
+                - Обязательные
+                <span class="main-form__legend-desktop">для заполнения</span>
+                поля</small>
             </p>
           </div>
         </form>

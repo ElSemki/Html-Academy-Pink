@@ -1,12 +1,31 @@
 .which-application__caption {
   padding: 0 15px;
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+.which-application__list {
+  @media (min-width: @desktop-width) {
+    padding: 40px 50px 45px 74px;
+  }
 }
 
 .which-application__item:not(:last-child) {
   margin-bottom: 62px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 36px;
+  }
 }
 
 .which-application__label {
   padding-left: 90px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
 }

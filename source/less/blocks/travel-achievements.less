@@ -1,10 +1,55 @@
 .travel-achievements__caption {
   padding: 0 15px;
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    margin: 0 auto;
+  }
 }
 
-.travel-achievements__item:not(:last-child) {
-  margin-bottom: 70px;
+.travel-achievements__list {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+  }
+}
+
+.travel-achievements__item {
+  &:not(:last-child) {
+    margin-bottom: 70px;
+
+    @media (min-width: @desktop-width) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1) {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:nth-child(6) {
+      order: 6;
+    }
+  }
 }
 
 .travel-achievements__label {

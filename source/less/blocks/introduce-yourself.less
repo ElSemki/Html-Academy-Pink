@@ -1,5 +1,9 @@
 .introduce-yourself__label {
   padding-left: 23px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+  }
 }
 
 .introduce-yourself__item {
@@ -7,5 +11,11 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
   }
 }
