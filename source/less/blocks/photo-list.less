@@ -1,16 +1,42 @@
-.photo-list__item {
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
-  &:not(:first-child) {
+.photo-list__items-wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     padding: 0 20px;
   }
 
-  &:first-of-type .photo-list__desc {
-    width: 280px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  @media (min-width: @tablet-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 54px;
+    width: 940px;
+    margin: 50px auto 0;
+  }
+}
+
+.photo-list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
+  &--hit {
+    padding: 0;
   }
 }
 
@@ -52,9 +78,37 @@
   height: auto;
 }
 
+.photo-list__desc-wrapper {
+  padding: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  & .photo-list__desc {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      & .photo-list__comment {
+        order: 3;
+      }
+    }
+  }
+}
+
 .photo-list__desc {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  flex-grow: 1;
   padding: 18px 17px 21px;
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    padding: 24px 29px 13px 27px;
+  }
 }
 
 .photo-list__author-info {
@@ -70,11 +124,27 @@
 
 .photo-list__comment {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .photo-list__like-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
   font-size: 12px;
   text-transform: uppercase;
   color: #d22856;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    width: auto;
+  }
+
+  &--hit {
+    @media (min-width: @tablet-width) {
+      width: 120px;
+    }
+  }
 }

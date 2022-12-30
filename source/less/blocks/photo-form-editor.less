@@ -7,12 +7,6 @@
   @media @tablet {
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 40px;
-    padding-bottom: 29px;
-  }
-
-  @media @desktop {
-    padding: 41px 60px 57px 80px;
   }
 }
 
@@ -29,10 +23,30 @@
 
 .photo-form-editor__controls {
   box-sizing: border-box;
+
+  @media @tablet {
+    margin-top: 0;
+    margin-left: auto;
+    width: 275px;
+  }
+
+  @media @desktop {
+    margin-right: 0;
+    width: 410px;
+  }
 }
 
 .photo-form-editor__filters {
   padding: 42px 20px 34px;
+
+  @media @tablet {
+    margin-bottom: 66px;
+    padding: 0;
+  }
+
+  @media @desktop {
+    margin-bottom: 145px;
+  }
 }
 
 .photo-form-editor__filter-buttons {
