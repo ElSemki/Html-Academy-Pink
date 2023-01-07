@@ -1,29 +1,37 @@
-.main-nav {
-  background-color: #283645;
-
+.main-nav__nav-wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
 .main-nav__navigation-header-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 23px;
-  box-shadow: 0 1px 0 #000000;
 
   @media (min-width: @tablet-width) {
     padding: 27px 20px 42px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .main-nav__logo {
-  width: 75px;
+  width: 74px;
+  height: 24px;
 
   @media (min-width: @tablet-width) {
     width: 145px;
+    height: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -31,14 +39,96 @@
   }
 }
 
+.main-nav__list {
+  @media (min-width: @desktop-width) {
+    width: 620px;
+  }
+}
+
+
 .main-nav__toggle {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  z-index: 2;
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 27px;
+  }
+
   @media (min-width: @desktop-width) {
     display: none;
   }
 }
 
-.main-nav__list {
-  @media (min-width: @desktop-width) {
-    width: 620px;
+@media (max-width: 959px) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: fade(#d22856, 30%);
+  box-shadow: 0 10px 0 0 fade(#d22856, 30%), 0 20px 0 0 fade(#d22856, 30%);
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 28px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #d22856;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#d22856, 30%);
   }
 }

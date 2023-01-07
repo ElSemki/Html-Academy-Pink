@@ -1,15 +1,58 @@
 .page-header {
-  background-color: #283645;
-  background-image: url("../img/index-page/back-mobile.jpg");
+  background-color: #1d2631;
+  background-image: url("../img/index-page/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 330px;
-  background-size: 320px auto;
+  background-position: 50% 260px;
+  background-size: 700px 462px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/index-page/bg-back-tablet@1x.jpg");
+    background-position: 50% 256px;
+    background-size: 1200px 729px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/index-page/bg-back-desktop@1x.jpg");
+    background-position: 50% 0;
+    background-size: 2560px 853px;
+  }
+
+  &--js {
+    padding-top: 66px;
+    background-position: 50% 0;
+
+
+    @media (min-width: @tablet-width) {
+      padding-top: 110px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 0;
+    }
+  }
 }
 
 .page-header__main-nav {
+  background-color: #283645;
+
   @media (min-width: @desktop-width) {
-    width: 940px;
-    margin: 0 auto;
+    background-color: fade(#000000, 30%);
+  }
+
+  &--js {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    @media @desktop {
+      position: static;
+    }
+  }
+
+  &--transparent {
+    background-color: fade(#000000, 30%);
   }
 }
 
@@ -17,12 +60,12 @@
   @media (min-width: @tablet-width) {
     width: 620px;
     margin: 0 auto;
-    padding: 102px 20px 120px;
+    padding: 102px 20px 100px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
-    padding: 114px 20px 130px;
+    padding: 100px 20px 119px;
   }
 }
 
