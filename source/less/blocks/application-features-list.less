@@ -1,17 +1,18 @@
 .application-features-list {
   text-align: center;
-  background-image:
-    url("../img/index-page/iphone-screen-mobile.jpg"),
-    url("../img/index-page/iphone-mobile.png");
+  background-image: url("../img/index-page/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-size: 136px auto, 157px auto;
-  background-position: 50% bottom, 50% 109%;
+  background-size: 157px auto;
+  background-position: 50% 109%;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: start;
+    background-image: url("../../img/index-page/iphone-screen-3-tablet@1x.png");
+    background-size: 268px 481px;
+    background-position: 20px 3px;
   }
 
   @media (min-width: @desktop-width) {

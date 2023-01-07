@@ -36,6 +36,15 @@
 
   @media (min-width: @desktop-width) {
     width: 147px;
+
+    &:hover path,
+    &:focus path {
+      fill: #d22856;
+    }
+
+    &:active path {
+      fill: fade(#ffffff, 30%);
+    }
   }
 }
 
