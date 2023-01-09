@@ -23,9 +23,46 @@
 }
 
 .which-application__label {
-  padding-left: 90px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 69px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 60px;
+    padding-left: 59px;
   }
+}
+
+.which-application__radio + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 37px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.which-application__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
+}
+
+
+.which-application__radio + label:hover::before,
+.which-application__radio + label:focus::before {
+  border: 2px solid #283645;
+}
+
+.which-application__radio + label:active::before {
+  border: 2px solid #d22856;
 }

@@ -1,7 +1,24 @@
 .photo-gallery__title {
-  margin: 0;
+  max-width: 499px;
+  margin: 0 auto;
   margin-bottom: 50px;
   padding: 0 20px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+  }
+
+  & br {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
 }

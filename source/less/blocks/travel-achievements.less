@@ -53,5 +53,47 @@
 }
 
 .travel-achievements__label {
-  padding-left: 57px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 69px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 59px;
+  }
+}
+
+.travel-achievements__checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+.travel-achievements__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../img/general/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 22px 16px;
+}
+
+.travel-achievements__checkbox + label:hover::before,
+.travel-achievements__checkbox + label:focus::before {
+  border: 2px solid #283645;
+}
+
+.travel-achievements__checkbox + label:active::before {
+  border: 2px solid #d22856;
 }
