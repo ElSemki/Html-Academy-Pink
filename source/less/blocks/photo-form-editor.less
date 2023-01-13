@@ -19,6 +19,26 @@
   background-position: 50% 0;
   background-size: 280px 374px;
   cursor: pointer;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo.html/filter-image-mobile@2x.jpg");
+  }
+
+  @media @tablet {
+    background-image: url("../img/photo.html/filter-image-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo.html/filter-image-tablet@2x.jpg");
+    }
+  }
+
+  @media @desktop {
+    background-image: url("../img/photo.html/filter-image-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo.html/filter-image-desktop@2x.jpg");
+    }
+  }
 }
 
 .photo-form-editor__controls {

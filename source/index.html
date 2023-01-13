@@ -419,8 +419,14 @@
         </ul>
       </div>
       <div class="contacts__map-wrapper">
-        <img class="contacts__map" src="img/index-page/map-mobile.png"
-          alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/index-page/map-desktop.jpg 1x, img/index-page/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/index-page/map-tablet.jpg 1x, img/index-page/map-tablet@2x.jpg 2x">
+          <img class="contacts__map" src="img/index-page/map-mobile.png" srcset="img/index-page/map-mobile@2x.jpg 2x"
+            alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+        </picture>
+        <div class="contacts__map-marker"></div>
+        <div class="contacts__interactive-map" id="map"></div>
       </div>
     </section>
   </main>
@@ -502,6 +508,7 @@
   <script src="js/main-nav.js"></script>
   <script src="js/price-table.js"></script>
   <script src="js/reviews-slider.js"></script>
+  <script src="js/interactive-map.js"></script>
 
 </body>
 
