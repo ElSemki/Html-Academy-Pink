@@ -3,6 +3,8 @@
   var navToggle = document.querySelector('.main-nav__toggle');
   var pageHeader = document.querySelector('.page-header');
   var pageHeaderNavWrapper = document.querySelector('.page-header__main-nav');
+  const SCROLL_Y_VALUE = 70;
+  let coordY = window.pageYOffset;
 
   navMain.classList.remove('main-nav--nojs');
   pageHeader.classList.add('page-header--js')
@@ -19,4 +21,16 @@
       pageHeaderNavWrapper.classList.add('page-header__main-nav--transparent');
     }
   });
+
+  function scrollWindow() {
+    coordY = window.pageYOffset;
+
+    if (navMain.dataset.status === 'closed') {
+      if (coordY > SCROLL_Y_VALUE) {
+        pageHeaderNavWrapper.classList.remove('page-header__main-nav--transparent');
+      } else {
+        pageHeaderNavWrapper.classList.add('page-header__main-nav--transparent');
+      }
+    }
+  }
 })();
