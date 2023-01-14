@@ -85,7 +85,7 @@
   max-width: 550px;
   min-height: 168px;
   margin: 0 auto;
-  padding: 30px 20px 40px;
+  padding: 30px 20px 0;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
@@ -95,23 +95,15 @@
 
   @media (min-width: @tablet-width) {
     max-width: 940px;
+    min-height: 330px;
     margin: 0 auto;
-    padding: 70px 20px 60px;
+    padding: 70px 20px 0;
     font-size: 50px;
     line-height: 68px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 60px 20px 90px;
-  }
-}
-
-.page-header__intro-title--photo-page {
-  @media (min-width: @tablet-width) {
-    padding-bottom: 124px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 90px;
+    min-height: 285px;
+    padding: 60px 20px 0;
   }
 }
