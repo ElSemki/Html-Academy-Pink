@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 23px;
+  padding: 22px 20px 23px;
 
   @media (min-width: @tablet-width) {
     padding: 27px 20px 42px;
@@ -22,6 +22,19 @@
   @media (min-width: @desktop-width) {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+.main-nav__logo {
+  @media (min-width: @desktop-width) {
+    &:hover .main-nav__logo-image path,
+    &:focus .main-nav__logo-image path {
+      fill: #d22856;
+    }
+
+    &:active .main-nav__logo-image path {
+      fill: fade(#ffffff, 30%);
+    }
   }
 }
 
@@ -51,14 +64,19 @@
       display: block;
       width: 147px;
     }
+  }
 
-    &:hover path,
-    &:focus path {
+  &--desktop {
+    fill: #ffffff;
+
+    &:hover,
+    &:focus {
       fill: #d22856;
     }
 
-    &:active path {
-      fill: fade(#ffffff, 30%);
+    &:active {
+      fill: #ffffff;
+      opacity: 0.3;
     }
   }
 }
@@ -127,6 +145,16 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+  top: 18px;
+  right: 18px;
+  width: 28px;
+  height: 28px;
+
+  @media (min-width: @tablet-width) {
+    top: 39px;
+    right: 18px;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -134,7 +162,7 @@
     top: 50%;
     right: 0;
     width: 28px;
-    height: 4px;
+    height: 3px;
     background-color: #ffffff;
   }
 

@@ -3,14 +3,20 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     border-top: none;
+    row-gap: 20px;
   }
 }
 
 .site-list__item {
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    &:not(:last-child) {
+      margin-right: 79px;
+    }
+  }
 }
 
 .site-list__link {

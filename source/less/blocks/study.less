@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   width: 620px;
-  padding: 60px 20px 72px;
+  padding: 14px 20px 62px;
   margin: 0 auto;
 
   @media (min-width: @desktop-width) {
@@ -23,17 +23,20 @@
     grid-template-columns: 1fr 2fr;
     column-gap: 71px;
     width: 940px;
+    padding: 68px 20px 58px;
   }
 }
 
 .study__information {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-  row-gap: 24px;
+  row-gap: 10px;
   width: 310px;
   order: 2;
 
   @media (min-width: @desktop-width) {
+    margin-top: 40px;
+    row-gap: 25px;
     width: 534px;
     font-size: 18px;
     line-height: 30px;
@@ -69,8 +72,8 @@
   line-height: 163px;
   color: #d22856;
   background-image:
-    url("../../img/index-page/diagram-fill.svg"),
-    url("../img/index-page/timer.svg");
+    url("../img/icons/diagram-fill.svg"),
+    url("../img/icons/timer.svg");
   background-repeat: no-repeat;
   background-position: 19px 55px, 0 0;
   background-size: 202px 202px, 238px 276px;
@@ -78,7 +81,7 @@
 
   @media (min-width: @desktop-width) {
     width: 298px;
-    padding: 101px 64px 81px 80px;
+    padding: 111px 64px 81px 80px;
     font-size: 120px;
     background-size: 252px 252px, 298px 345px;
     background-position: 22px 68px, 0 0;

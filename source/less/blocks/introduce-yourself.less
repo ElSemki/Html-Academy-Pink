@@ -10,7 +10,11 @@
   margin: 0;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 52px;
+    }
   }
 
   @media (min-width: @tablet-width) {

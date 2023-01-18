@@ -2,7 +2,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 55px;
   }
 
   @media (min-width: @desktop-width) {
@@ -78,7 +78,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding: 40px 60px;
+    padding: 0 60px;
   }
 
   &--introduce-yourself {
@@ -89,20 +89,56 @@
     }
   }
 
-  &--which-application {
+  &--contact-information {
+    @media (min-width: @tablet-width) {
+      padding-top: 38px;
+      padding-bottom: 28px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 32px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &--travel-achievements {
+    @media (min-width: @tablet-width) {
+      padding-top: 50px;
+      padding-bottom: 55px;
+    }
+
     @media (min-width: @desktop-width) {
       padding: 0;
+    }
+  }
+
+  &--which-application {
+    @media (min-width: @tablet-width) {
+      padding-top: 48px;
+      padding-bottom: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0;
+    }
+  }
+
+  &--emotions {
+    @media (min-width: @tablet-width) {
+      padding-top: 38px;
+      padding-bottom: 43px;
     }
   }
 }
 
 .main-form__footer-wrapper {
-  padding: 20px;
+  padding: 8px 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10px;
     padding: 0;
     order: 5;
   }
@@ -114,7 +150,7 @@
 }
 
 .main-form__button {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     max-width: 296px;
@@ -124,6 +160,7 @@
 
 .main-form__legend {
   margin: 0;
+  font-size: 18px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;

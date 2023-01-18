@@ -91,11 +91,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  & .photo-form-editor__icon path {
-    fill: fade(#283645, 30%);
-  }
-
-  &--current .photo-form-editor__icon path {
+  &--current .photo-form-editor__icon {
     fill: #d22856;
   }
 
@@ -104,7 +100,7 @@
   }
 
   &:not(&--current):hover {
-    & .photo-form-editor__icon path {
+    & .photo-form-editor__icon {
       fill: fade(#283645, 50%);
     }
   }
@@ -113,6 +109,7 @@
 .photo-form-editor__icon {
   display: block;
   pointer-events: none;
+  fill: fade(#283645, 30%);
 
   &--crop {
     @media @tablet {
@@ -167,7 +164,7 @@
     height: 48px;
   }
 
-  & .photo-form-editor__icon path {
+  & .photo-form-editor__icon {
     fill: #d22856;
   }
 }

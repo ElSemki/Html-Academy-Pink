@@ -14,7 +14,7 @@
 }
 
 .contact-information__label {
-  padding-left: 23px;
+  padding-left: 15px;
 
   @media (min-width: @tablet-width) {
     order: 2;
@@ -54,13 +54,19 @@
     }
 
     &--tel::after {
-      background-image: url("../../img/general/phone-icon.svg");
+      background-image: url("../../img/icons/phone-icon.svg");
       background-size: 20px 20px;
     }
 
     &--email::after {
-      background-image: url("../../img/general/mail-icon.svg");
+      background-image: url("../../img/icons/mail-icon.svg");
       background-size: 20px 20px;
     }
+  }
+}
+
+.contact-information__input {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
   }
 }

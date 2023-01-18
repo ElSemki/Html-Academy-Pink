@@ -6,31 +6,71 @@
   padding: 40px 20px;
 
   @media (min-width: @tablet-width) {
+    padding: 34px 20px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
     justify-content: space-around;
+    padding: 60px 10px;
   }
 }
 
 .page-footer__logo {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
-}
 
-.page-footer__logo-image {
-  &:hover path,
-  &:focus path {
+  &:hover .page-footer__logo-image path,
+  &:focus .page-footer__logo-image path {
     fill: #d22856;
   }
 
-  &:active path {
+  &:active .page-footer__logo-image path {
     opacity: 0.3;
+  }
+}
+
+.page-footer__logo-image {
+  width: 145px;
+  height: 40px;
+  fill: #283645;
+
+  &:hover,
+  &:focus {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      width: 147px;
+      fill: #283645;
+
+      &:hover,
+      &:focus {
+        fill: #d22856;
+      }
+
+      &:active {
+        fill: #283645;
+        opacity: 0.3;
+      }
+    }
   }
 }
 
@@ -49,17 +89,29 @@
   align-items: center;
   width: 132px;
 
-  &:hover path,
-  &:focus path {
+  @media (min-width: @desktop-width) {
+    width: 156px;
+  }
+
+  &:hover .page-footer__copyright-icon,
+  &:focus .page-footer__copyright-icon {
     fill: #283645;
   }
 
-  &:active path {
+  &:active .page-footer__copyright-icon {
     fill: #283645;
     opacity: 0.3;
   }
 }
 
+.page-footer__copyright-icon {
+  fill: #d22856;
+}
+
 .page-footer__copyright-text {
   color: #283645;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
