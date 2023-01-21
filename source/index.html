@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PINK: Главная</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -350,6 +353,12 @@
       </div>
       <div class="contacts__map-wrapper">
         <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="img/index-page/map-desktop.webp 1x, img/index-page/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/index-page/map-tablet.webp 1x, img/index-page/map-tablet@2x.webp 2x">
+          <source type="image/webp"  srcset=" img/index-page/map-mobile.webp 1x, img/index-page/map-mobile@2x.jpg 2x">
+
           <source media="(min-width: 960px)"
             srcset="img/index-page/map-desktop.jpg 1x, img/index-page/map-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)"

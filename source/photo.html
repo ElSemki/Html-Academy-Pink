@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PINK: Фотографии</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -74,6 +78,13 @@
         <figure class="photo-list__item photo-list__item--hit">
           <a class="photo-list__photo-link photo-list__photo-link--hit" href="#" data-panorama-text="Панорама дня">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/photo.html/panorama-desktop.webp 1x, img/photo.html/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo.html/panorama-tablet.webp 1x, img/photo.html/panorama-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/photo.html/panorama-mobile.webp 1x, img/photo.html/panorama-mobile@2x.webp 2x">
+
               <source media="(min-width: 960px)"
                 srcset="img/photo.html/panorama-desktop.jpg 1x, img/photo.html/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
@@ -105,6 +116,13 @@
             <a class="photo-list__photo-link" href="#">
               <picture>
                 <source media="(min-width: 960px)"
+                  srcset="img/photo.html/car-desktop.webp 1x, img/photo.html/car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo.html/car-tablet.webp 1x, img/photo.html/car-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo.html/car-mobile.webp 1x, img/photo.html/car-mobile@2x.webp 2x">
+
+                <source media="(min-width: 960px)"
                   srcset="img/photo.html/car-desktop.jpg 1x, img/photo.html/car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
                   srcset="img/photo.html/car-tablet.jpg 1x, img/photo.html/car-tablet@2x.jpg 2x">
@@ -132,6 +150,13 @@
           <figure class="photo-list__item">
             <a class="photo-list__photo-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo.html/drums-desktop.webp 1x, img/photo.html/drums-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo.html/drums-tablet.webp 1x, img/photo.html/drums-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo.html/drums-mobile.webp 1x, img/photo.html/drums-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)"
                   srcset="img/photo.html/drums-desktop.jpg 1x, img/photo.html/drums-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
@@ -159,6 +184,13 @@
           <figure class="photo-list__item">
             <a class="photo-list__photo-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo.html/window-desktop.webp 1x, img/photo.html/window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo.html/window-tablet.webp 1x, img/photo.html/window-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo.html/window-mobile.webp 1x, img/photo.html/window-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)"
                   srcset="img/photo.html/window-desktop.jpg 1x, img/photo.html/window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
@@ -187,6 +219,14 @@
           <figure class="photo-list__item">
             <a class="photo-list__photo-link" href="#">
               <picture>
+
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo.html/fair-desktop.webp 1x, img/photo.html/fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo.html/fair-tablet.webp 1x, img/photo.html/fair-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo.html/fair-mobile.webp 1x, img/photo.html/fair-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)"
                   srcset="img/photo.html/fair-desktop.jpg 1x, img/photo.html/fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
@@ -215,6 +255,14 @@
           <figure class="photo-list__item">
             <a class="photo-list__photo-link" href="#">
               <picture>
+
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo.html/legs-desktop.webp 1x, img/photo.html/legs-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo.html/legs-tablet.webp 1x, img/photo.html/legs-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo.html/legs-mobile.webp 1x, img/photo.html/legs-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)"
                   srcset="img/photo.html/legs-desktop.jpg 1x, img/photo.html/legs-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
@@ -243,6 +291,13 @@
           <figure class="photo-list__item">
             <a class="photo-list__photo-link" href="#">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo.html/airplane-desktop.webp 1x, img/photo.html/airplane-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo.html/airplane-tablet.webp 1x, img/photo.html/airplane-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo.html/airplane-mobile.webp 1x, img/photo.html/airplane-mobile@2x.webp 2x">
+
                 <source media="(min-width: 960px)"
                   srcset="img/photo.html/airplane-desktop.jpg 1x, img/photo.html/airplane-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)"
