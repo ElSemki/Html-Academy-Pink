@@ -22,15 +22,11 @@
     }
   });
 
-  function scrollWindow() {
-    coordY = window.pageYOffset;
-
-    if (navMain.dataset.status === 'closed') {
-      if (coordY > SCROLL_Y_VALUE) {
-        pageHeaderNavWrapper.classList.remove('page-header__main-nav--transparent');
-      } else {
-        pageHeaderNavWrapper.classList.add('page-header__main-nav--transparent');
-      }
+  window.onscroll = function () {
+    if (window.pageYOffset > 50) {
+      pageHeaderNavWrapper.classList.remove('page-header__main-nav--transparent');
+    } else {
+      pageHeaderNavWrapper.classList.add('page-header__main-nav--transparent');
     }
   }
 })();
